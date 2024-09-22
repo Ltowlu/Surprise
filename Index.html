@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Birthday Surprise</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            margin-top: 30px;
+            color: #fefefe;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease;
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            animation: slideIn 2s ease;
+        }
+        .image-display {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .image-display img {
+            border-radius: 15px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-display img:hover {
+            transform: scale(1.1);
+        }
+        .quote-section {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 1.2em;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+        }
+        .audio-box {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 1.3em;
+            color: #f0f0f0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>A Special Day</h1>
+
+    <p>Today, I celebrate not just your birthday, but everything that makes you uniquely you. Here’s a little surprise filled with memories and heartfelt wishes.</p>
+
+    <!-- Image Section -->
+    <div class="container">
+        <div class="image-display">
+            <img src="image1.jpg" alt="Memory">
+            <img src="image2.jpg" alt="Memory">
+            <img src="image3.jpg" alt="Memory">
+        </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="quote-section">
+        <p>“In every memory shared, in every moment cherished, you have brought light to my world. Today, I hope you see how much you mean to me.”</p>
+    </div>
+
+    <!-- Voice Message -->
+    <div class="audio-box">
+        <p>Take a moment, close your eyes, and listen...</p>
+        <audio controls>
+            <source src="voicemessage.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>With all my heart, I hope this day brings you joy, Mad Girl!</p>
+    </footer>
+</body>
+</html>
